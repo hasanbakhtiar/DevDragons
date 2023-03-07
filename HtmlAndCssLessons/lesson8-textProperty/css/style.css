@@ -1,0 +1,16 @@
+.text{
+    font-size: 50px;
+    color: white;
+    line-height: 90px;
+    background-color: green;
+    /* letter-spacing: 30px; */
+    /* word-spacing: 20px; */
+    /* font-family: 'Courier New', Courier, monospace,sans-serif; */
+    /* font-weight: 900; */
+
+}
+
+th{
+    color: red;
+    background-color: green;
+}
