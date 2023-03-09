@@ -1,0 +1,44 @@
+body{
+    /* background-color: red; */
+}
+.box{
+    width: 100px;
+    height: 100px;
+    /* background: radial-gradient(circle, rgba(250,0,255,1) 0%, rgba(21,92,0,1) 36%, rgba(163,152,0,1) 64%, rgba(0,117,255,1) 100%); */
+    /* background-color: red; */
+    /* border-left-color: black;
+    border-left-width: 3px;
+    border-left-style: double; */
+    /* border: 3px solid black;
+    border-radius: 50%; */
+
+    /* background-color: #1c9e0e; */
+    /* opacity: .1; */
+    /* min -3 : max - 6 + opacity: 2; */
+    /* 0123456789abcdef */
+    /* background-color: rgb(red, green, blue); */
+    /* background-color: rgb(255, 255, 255); */
+    /* background-color: hwb(87 9% 24%); */
+    /* background-color: hsl(hue, saturation, lightness); */
+    /* background-color: hwb(hue white black); */
+    /* min - 0 max - 255  */
+}
+
+
+/* html{
+    font-size: 5px;
+}
+
+.text-one{
+    font-size: 10em;
+}
+
+ol{
+    font-size: 20px;
+    
+}
+
+ol li{
+    font-size: 10em;
+} */
+
