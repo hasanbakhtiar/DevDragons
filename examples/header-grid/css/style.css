@@ -1,0 +1,15 @@
+header{
+    display: grid;
+    grid-template: auto / 30% 50% 20%;
+}
+
+header nav ul{
+    display: grid;
+    grid-template: auto / auto auto auto auto auto auto;
+}
+
+header .btn-con{
+    display: grid;
+    gap: 10px;
+    grid-template: 30px / auto auto auto ;
+}
