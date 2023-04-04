@@ -1,0 +1,41 @@
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css');
+/* .box{
+    position: relative;
+    width: 100px;
+    height: 100px;
+    background-color: green;
+    animation-name: animate;
+    animation-duration: 7s;
+    animation-iteration-count:infinite ;
+    animation-delay: 1s;
+} */
+
+/* @keyframes animate{
+    from{left: 0;}
+    to{left: 100px;}
+} */
+/* 
+@keyframes animate {
+    0%{left: 0; top: 0; background-color: green;}
+    25%{left: 300px; top: 0; background-color: yellow; width: 300px;}
+    50%{left: 300px; top: 300px; background-color: red;}
+    75%{left: 0px; top: 300px; background-color: blue;}
+    100%{left: 0px; top: 0px; background-color: green;}
+}       */
+
+
+.box h1{
+    animation: 1s animate infinite;
+    
+}
+
+@keyframes animate {
+    0%{
+        color: black;
+    }50%{
+        color: red;
+    }
+    100%{
+        color: black;
+    }
+}
