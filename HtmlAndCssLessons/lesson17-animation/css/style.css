@@ -1,21 +1,23 @@
 @import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css');
-/* .box{
+.box{
     position: relative;
     width: 100px;
     height: 100px;
     background-color: green;
     animation-name: animate;
-    animation-duration: 7s;
+    animation-duration: 2s;
     animation-iteration-count:infinite ;
+    animation-direction: reverse;
     animation-delay: 1s;
-} */
+    clip-path: polygon(24% 17%, 88% 19%, 19% 89%);
+}
 
 /* @keyframes animate{
     from{left: 0;}
     to{left: 100px;}
 } */
-/* 
-@keyframes animate {
+
+/* @keyframes animate {
     0%{left: 0; top: 0; background-color: green;}
     25%{left: 300px; top: 0; background-color: yellow; width: 300px;}
     50%{left: 300px; top: 300px; background-color: red;}
@@ -23,8 +25,13 @@
     100%{left: 0px; top: 0px; background-color: green;}
 }       */
 
+/* h1::before{
+    font-family: "Font Awesome 5 Free";
+    content: "\f1b9"
+} */
 
-.box h1{
+
+/* .box h1{
     animation: 1s animate infinite;
     
 }
@@ -38,4 +45,14 @@
     100%{
         color: black;
     }
+} */
+
+
+
+.box i{
+    animation: 1s firlat infinite;
+    animation-timing-function: linear;
+}
+@keyframes firlat {
+    100%{transform: rotate(360deg);}
 }
