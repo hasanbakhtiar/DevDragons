@@ -78,9 +78,30 @@
 
 
 
-['a','b','c',[1,2,3,['1a','2a','3a','4a','5a'],4,5],'d','e']
+const infoPartOne = ['a','b','c',[1,2,3,['1a','2a','3a','4a','5a'],4,5],'d','e'];
+const infoPartTwo = ['f','g','h',[6,7,8,['1b','2b','3b','4b','5b'],9,10],'i','n'];
 
-['f','g','h',[6,7,8,['1b','2b','3b','4b','5b'],9,10],'i','n']
+
+// part one start
+const letterAndNumberPartOne = infoPartOne[3][3];
+const letterAndNumberPartTwo = infoPartTwo[3][3];
+const totalLetterAndNumber = letterAndNumberPartOne.concat(letterAndNumberPartTwo);
+console.log(totalLetterAndNumber);
+// part one end
+
+// part two start
+const onlyNumberPartOne = infoPartOne[3].slice(0,3).concat(infoPartOne[3].slice(4,6));
+const onlyNumberPartTwo = infoPartTwo[3].slice(0,3).concat(infoPartTwo[3].slice(4,6));
+const totalOnlyNumber = onlyNumberPartOne.concat(onlyNumberPartTwo);
+console.log(totalOnlyNumber);
+
+// part two end
+
+
+
+
+
+
 
 
 
