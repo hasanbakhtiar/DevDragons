@@ -72,45 +72,97 @@
 
 // console.log(products.title);
 
-const phoneProducts = [
+// const phoneProducts = [
+//     {
+//         title:"Samsung S23",
+//         price:2300,
+//         color:"yellow",
+//         stock:true
+//     },
+//     {
+//         title:"Samsung A20",
+//         price:300,
+//         color:"black",
+//         stock:false
+//     },
+//     {
+//         title:"IPhone 14",
+//         price:2000,
+//         color:"red",
+//         stock:true
+//     },
+//     {
+//         title:"Xiaomi 13 pro",
+//         price:3300,
+//         color:"green",
+//         stock:true
+//     }
+// ]
+
+
+// const data = [];
+
+
+
+// for(let items of phoneProducts){
+//    if (items.stock) {
+//     data.push(items.title)
+//    }
+// }
+// data.pop()
+
+// for(let i of data){
+//     console.log(i);
+// }
+
+
+const car = [
     {
-        title:"Samsung S23",
-        price:2300,
-        color:"yellow",
-        stock:true
+        brand:"BMW",
+        model:"X5",
+        year:2023,
+        newCar:true
     },
     {
-        title:"Samsung A20",
-        price:300,
-        color:"black",
-        stock:false
+        brand:"Mercedes",
+        model:"S500",
+        year:2022,
+        newCar:false
     },
     {
-        title:"IPhone 14",
-        price:2000,
-        color:"red",
-        stock:true
+        brand:"BMW",
+        model:"X6",
+        year:2020,
+        newCar:false
     },
     {
-        title:"Xiaomi 13 pro",
-        price:3300,
-        color:"green",
-        stock:true
+        brand:"BMW",
+        model:"X7",
+        year:2023,
+        newCar:true
+    },
+    {
+        brand:"BMW",
+        model:"X3",
+        year:2023,
+        newCar:true
     }
 ]
 
+const carData = [];
 
-const data = [];
-
-
-
-for(let items of phoneProducts){
-   if (items.stock) {
-    data.push(items.title)
-   }
+for(let i of car){
+    if (i.newCar) {
+        carData.push(i.brand+i.model)
+    }
 }
-data.pop()
 
-for(let i of data){
-    console.log(i);
-}
+
+const randomData = Math.random()*2;
+
+console.log(randomData.toFixed());
+
+
+console.log(carData[Number(randomData.toFixed())]);
+
+// console.log(typeof randomData.toFixed());
