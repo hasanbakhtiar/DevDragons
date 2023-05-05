@@ -97,6 +97,39 @@
 
 
 
+// const car = {
+//     brand:"BMW",
+//     model:"x5",
+//     year:2022,
+//     calculateSpeed:(km,h)=>{
+//         return `${car.brand} ${km/h}km/h`        
+//     }
+// }
+// const way = prompt("Mesafeni qeyd edin");
+// const time = prompt("Vaxti qeyd edin");
+// console.log(car.calculateSpeed(way,time));
+
+
+// let a = 0;
+
+// for(let x=1; x<6;x++){
+//     a+=x
+//    console.log(x);
+// }
+// console.log("------------------");
+// console.log(a);
+
+
+// let a = 0;
+
+// for(let x=1; x<8;x++){
+//    console.log(x);
+//    a+=x;
+// }
+
+// console.log(a);
+
+
 
 
 
