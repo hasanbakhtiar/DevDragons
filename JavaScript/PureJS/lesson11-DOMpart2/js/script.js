@@ -15,4 +15,10 @@
 //     document.querySelectorAll('li')[i].innerHTML = 'test';
 // }
 
+import { products } from "../data/products.js";
 
+const text = document.querySelectorAll('li');
+
+products.map((item,c)=>{
+    text[c].innerHTML = item.title;
+})
