@@ -24,16 +24,41 @@
 // })
 
 
-const btn = document.querySelector('button');
-const text = document.querySelector('h1');
+// const btn = document.querySelector('button');
+// const text = document.querySelector('h1');
 
 
-const city = ()=>{
-    if (text.innerHTML == 'England') {
-        text.innerHTML = 'London';
-    }else{
-        text.innerHTML = 'England';
-    }
+// const city = ()=>{
+//     if (text.innerHTML == 'England') {
+//         text.innerHTML = 'London';
+//     }else{
+//         text.innerHTML = 'England';
+//     }
+// }
+
+// btn.onclick=city;
+
+
+
+const lang = {
+    az:["Ana Sehife",'Haqqimizda','Xidmetlerimiz','Əlaqə'],
+    en:["Home",'About','Services','Contact']
 }
 
-btn.onclick=city;
+const langBtn = document.querySelector('#lang');
+const navLink = document.querySelectorAll('.nav-link');
+
+langBtn.onclick=()=>{
+    for(let i in lang.az){
+        navLink[i].innerHTML = lang.az[i];
+    }
+
+}
+
+
+
+
+
+
+
+
