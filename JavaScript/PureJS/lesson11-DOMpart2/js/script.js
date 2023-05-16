@@ -15,10 +15,25 @@
 //     document.querySelectorAll('li')[i].innerHTML = 'test';
 // }
 
-import { products } from "../data/products.js";
+// import { products } from "../data/products.js";
 
-const text = document.querySelectorAll('li');
+// const text = document.querySelectorAll('li');
 
-products.map((item,c)=>{
-    text[c].innerHTML = item.title;
-})
+// products.map((item,c)=>{
+//     text[c].innerHTML = item.title;
+// })
+
+
+const btn = document.querySelector('button');
+const text = document.querySelector('h1');
+
+
+const city = ()=>{
+    if (text.innerHTML == 'England') {
+        text.innerHTML = 'London';
+    }else{
+        text.innerHTML = 'England';
+    }
+}
+
+btn.onclick=city;
