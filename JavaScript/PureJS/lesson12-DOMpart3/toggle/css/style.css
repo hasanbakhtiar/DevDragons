@@ -1,0 +1,18 @@
+html{
+    overflow-x: hidden;
+}
+menu{
+    position: absolute;
+    right: 0;
+    width: 20%;
+    height: 50vh;
+    background-color: bisque;
+    transition: .5s;
+    transform: translateX(400px);
+}
+.box{
+    transition: .5s;
+    width: 300px;
+    height: 0px;
+    background-color: red;
+}
