@@ -57,10 +57,18 @@ addBtn.onclick = () => {
         alert.className = 'alert alert-warning';
     }else{
         const span = document.createElement('span');
-        span.innerHTML = todoInput.value;
-        span.setAttribute('class','list-group-item list-group-item-action');
+        span.innerHTML = `<input  value="${todoInput.value}" disabled/><div><button  class="del btn btn-danger">X</button><button  class=" btn btn-primary">edit</button></div>`;
+        span.setAttribute('class','list-group-item list-group-item-action d-flex justify-content-between');
         todoList.appendChild(span);
         todoInput.value = null;
+        
+        let todoItem = document.querySelectorAll('span');
+        
+        for(let i = 0; i<todoItem.length; i++){
+            document.querySelectorAll('.del')[i].onclick = ()=>{
+                todoItem[i].remove()
+            }
+        }
     }
 }
 
