@@ -1,0 +1,24 @@
+{
+  "name": "lesson1-introduction",
+  "version": "1.0.0",
+  "description": "this project for testing",
+  "main": "index.js",
+  "scripts": {
+   
+    "start": "live-server public",
+    "babel": "npx babel src/index.js --out-file=public/scripts/app.js --watch"
+
+  },
+  "keywords": [
+    "React starter",
+    "my first project"
+  ],
+  "author": "Hasan Bakhtiar",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/cli": "^7.22.5",
+    "@babel/core": "^7.22.5",
+    "@babel/preset-env": "^7.22.5",
+    "@babel/preset-react": "^7.22.5"
+  }
+}
