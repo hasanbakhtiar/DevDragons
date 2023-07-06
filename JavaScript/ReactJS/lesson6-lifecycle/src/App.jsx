@@ -1,31 +1,44 @@
-import axios from 'axios';
 import React, { Component } from 'react'
+import axios from 'axios';
+class App extends Component {
 
-export class App extends Component {
-    constructor(){
+    constructor() {
         super();
-        this.state={
-            prodata:[]
+        this.state = {
+            users: [],
+            inputVaule:""
         }
     }
+ 
     
-    
-    componentDidMount(){
-        axios.get('https://dummyjson.com/products')
-        .then(res=>this.setState({prodata:res.data.products}))
+    submitform=(event)=>{
+            event.preventDefault();
+            axios
+            .get(`https://api.github.com/search/users?q=${this.state.inputVaule}`)
+            .then(res => this.setState({users:res.data.items}))
+            console.log('test');
     }
-    
-    
-  render() {
-    return (
-      <ol>
-        {this.state.prodata.map(item=>{
-            return <li key={item.id}>
-                {item.title}</li>
-        })}
-      </ol>
-    )
-  }
+
+    render() {
+        return (
+            <div>
+                <h4>User List</h4>
+
+                <form onSubmit={this.submitform}>
+                    <input onChange={e=>this.setState({inputVaule:e.target.value})} type="text" />
+                    <button type='submit'>search</button>
+                </form>
+
+                <ol>
+                    {this.state.users.map(item=>(
+                        <a href={item.html_url} target='_blank' rel="noreferrer"><li key={item.id}><img width={100} src={item.avatar_url} alt="" />{item.login}</li></a>
+                    ))}
+                </ol>
+
+
+            </div>
+        )
+    }
 }
 
 export default App
