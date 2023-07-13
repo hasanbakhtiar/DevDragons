@@ -1,0 +1,54 @@
+@use "sass:math";
+
+ol {
+  background-color: green;
+  li {
+    color: #fff;
+    &:hover {
+      color: red;
+    }
+    &::after {
+      content: "hello";
+    }
+  }
+}
+
+@import 'mixin';
+
+
+$qara:#000;
+$malocnu:bisque;
+$yeke-herf:40px;
+
+.main-box {
+  @include center();
+  gap: 10px;
+  .box {
+    width: 100px;
+    height: 100px;
+    background-color: $qara;
+    @include center();
+    color: $malocnu;
+    font-size: $yeke-herf;
+  }
+}
+
+
+$base-color: rgb(53, 0, 102);
+
+@for $i from 1 through 10 {
+  li:nth-child(#{$i}) {
+    background-color: lighten($base-color, $i * 5%);
+  }
+}
+
+
+@function info($a,$b){
+    $c:$a+$b;
+    @return $c;
+    
+}
+
+h1{
+    font-size: info(20px,30px );
+}
