@@ -1,4 +1,4 @@
-import React, { useContext } from 'react'
+import  { useContext } from 'react'
 import { ProductContext } from '../context/ProductProvider'
 import { useParams } from 'react-router-dom';
 

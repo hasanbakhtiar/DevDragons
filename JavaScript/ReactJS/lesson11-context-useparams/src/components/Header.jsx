@@ -17,7 +17,9 @@ const Header = () => {
             <LinkContainer to="/products"><Nav.Link >Products</Nav.Link></LinkContainer>
           </Nav>
           {localStorage.getItem('active') === 'true'?"hasan@webluna.az":<LinkContainer to="/login"><Button variant='success'>Login</Button></LinkContainer>}
+          <i className="fa-solid fa-magnifying-glass"></i>
         </Navbar.Collapse>
+        
       </Container>
     </Navbar>
  
